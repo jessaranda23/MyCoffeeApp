@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/account"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/person_blue"
+            android:clickable="true"
+
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            />
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/settings_blue"
+            android:clickable="true"
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/orderDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/small"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/small"
+            android:layout_margin="24dp"
+            android:clickable="true"
+
+            />
+
+        <ImageView
+            android:id="@+id/med"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/med"
+            android:layout_margin="24dp"
+            android:clickable="true"
+
+            />
+
+        <ImageView
+            android:id="@+id/large"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/large"
+            android:layout_margin="24dp"
+            android:clickable="true"
+
+            />
+
+        <ImageView
+            android:id="@+id/xlarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/extralarge"
+            android:layout_margin="24dp"
+            android:clickable="true"
+
+            />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+
+            >
+
+
+            <Button
+                android:id="@+id/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="black"
+
+                />
+
+            <Button
+                android:id="@+id/reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="regular"
+
+                />
+
+            <Button
+                android:id="@+id/dubdub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="2 x 2"
+
+                />
+
+            <Button
+                android:id="@+id/triptrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="3 x 3"
+
+                />
+
+            <Button
+                android:id="@+id/decaf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="decaf"
+
+                />
+
+            <Button
+                android:id="@+id/tea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="tea"
+
+                />
+
+            <Button
+                android:id="@+id/espresso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="espresso"
+
+                />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="SUGAR"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="20dp"
+
+            />
+
+        <Button
+            android:id="@+id/sugar_plus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/round_background"
+            android:text="\u002B"
+            android:textStyle="bold"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:id="@+id/sugarCount"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:padding="23dp"
+
+            />
+
+        <Button
+            android:id="@+id/sugar_minus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/round_background"
+            android:text="\u2212"
+            android:textColorHighlight="@color/blue"
+            android:textColorLink="@color/blue"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="CREAM"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="20dp"
+
+            />
+
+        <Button
+            android:id="@+id/cream_plus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/round_background"
+            android:text="\u002B"
+            android:textStyle="bold"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:id="@+id/creamCount"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:padding="23dp"
+
+            />
+
+        <Button
+            android:id="@+id/cream_minus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/round_background"
+            android:text="\u2212"
+            android:textColorHighlight="@color/blue"
+            android:textColorLink="@color/blue"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/orderCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Count: 0"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp"
+
+            />
+
+        <Button
+            android:id="@+id/addToOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to Order"
+            android:padding="16dp"
+            app:layout_constraintTop_toBottomOf="@id/orderCount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            />
+
+        <Button
+            android:id="@+id/clearOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear Order"
+            android:padding="16dp"
+            app:layout_constraintTop_toBottomOf="@id/addToOrder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
